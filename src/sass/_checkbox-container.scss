@@ -1,0 +1,37 @@
+.checkbox_cont {
+  &-input {
+    @include border;
+    @include std-width;
+    border: none;
+    margin-top: 0.5rem;
+    padding: 0.5rem;
+
+    &-logo {
+      position: absolute;
+      right: 1rem;
+      top: 1rem;
+      width: 1.9rem;
+    }
+
+    &-wrapper {
+      position: relative;
+    }
+  }
+
+  &-items {
+    margin-top: 1rem;
+  }
+
+  &-item {
+    padding: 0.3rem 0.5rem;
+  }
+
+  &-checkbox:checked {
+    accent-color: $color-secondary;
+  }
+
+  &-label {
+    font-size: 1.1rem;
+    margin-left: 1.6rem;
+  }
+}

@@ -1,0 +1,35 @@
+.checkbox_cont {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  padding-left: 1rem;
+
+  &-input {
+    width: 62.5rem;
+    margin-left: 0.2rem;
+    border-top: 0.19rem solid $color-grey-light;
+    border-bottom: 0.19rem solid $color-grey-light;
+  }
+
+  &-text {
+    color: $color-grey-dark;
+    font-size: 1.2rem;
+    margin: 0 0.5rem;
+  }
+
+  &-icon {
+    @include display-center;
+    border-radius: 0.2rem;
+    border: 0.19rem solid $color-grey-dark;
+    height: 1.3rem;
+    width: 1.3rem;
+
+    &-image {
+      width: 1rem;
+    }
+  }
+}
+
+.checked {
+  background-color: $color-secondary;
+}

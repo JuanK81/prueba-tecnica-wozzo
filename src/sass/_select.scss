@@ -1,0 +1,46 @@
+.select {
+  @include std-width;
+  display: grid;
+  grid-template-columns: 1fr 3rem;
+  grid-template-rows: 1fr;
+  position: relative;
+
+  &-options {
+    @include border;
+    @include std-width;
+    border-radius: 0.6rem;
+    display: flex;
+    flex-direction: column;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    justify-content: center;
+    min-height: 4.4rem;
+    padding-bottom: 0.5rem;
+    padding: 0 0.5rem;
+  }
+
+  &-option {
+    align-items: center;
+    color: $color-grey-dark;
+    cursor: pointer;
+    display: flex;
+    font-size: 1.5rem;
+    min-height: 4rem;
+  }
+
+  &-btn {
+    background: transparent;
+    border: none;
+    color: $color-grey-dark;
+    font-size: 2rem;
+    height: 2rem;
+    position: absolute;
+    right: 0.7rem;
+    top: 1rem;
+    width: 2rem;
+
+    &-icon {
+      width: 1.9rem;
+    }
+  }
+}

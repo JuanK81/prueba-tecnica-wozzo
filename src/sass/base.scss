@@ -1,0 +1,57 @@
+// COLOR VARIABLES
+$color-primary: #fff;
+
+$color-secondary: #6800f0;
+
+$color-grey-light: #cacaca;
+$color-grey: #888787;
+$color-grey-dark: #535353;
+
+$color-wozzo-green: #349980;
+
+//  MIXINS
+
+@mixin border {
+  border: 0.19rem solid $color-grey-light;
+}
+
+@mixin display-center {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+@mixin std-width {
+  width: 63rem;
+}
+
+// GENERAL
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; // 10px/16px = 62.5 => 1rem = 10px
+  transition: all 0.2s;
+}
+
+body {
+  width: 100%;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+  font-size: 2rem;
+
+  h1 {
+    color: $color-wozzo-green;
+  }
+}

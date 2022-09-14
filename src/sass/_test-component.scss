@@ -1,0 +1,14 @@
+.test {
+  @include display-center;
+  height: 100%;
+  margin-top: 10rem;
+  width: 100%;
+
+  &-container {
+    @include std-width;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}

@@ -1,0 +1,64 @@
+.selected_opt {
+  @include std-width;
+  display: grid;
+  grid-template-columns: 1fr 2rem 10rem;
+
+  &-items {
+    display: flex;
+    grid-row: 1 / 2;
+  }
+
+  &-item {
+    display: flex;
+    grid-column: 1 / 2;
+  }
+
+  &-dots {
+    font-size: 2rem;
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    margin-top: 0.6rem;
+  }
+
+  &-controls {
+    align-items: center;
+    display: flex;
+    grid-column: 3 / 4;
+    grid-row: 1 / 2;
+    justify-content: center;
+    margin-right: 1.3rem;
+  }
+
+  &-total {
+    align-items: center;
+    background-color: $color-grey-dark;
+    border-radius: 0.4rem;
+    display: flex;
+    height: 2.4rem;
+    width: 2.4rem;
+    justify-content: center;
+    margin: 0 0.5rem 0.5rem 0;
+  }
+  &-number {
+    color: $color-primary;
+    font-size: 1.8rem;
+  }
+
+  &-close {
+    background: none;
+    border: none;
+    color: $color-grey-dark;
+    margin-bottom: -0.2rem;
+
+    &-icon {
+      margin-left: -0.3rem;
+      margin-bottom: 0.4rem;
+      width: 2.4rem;
+    }
+  }
+
+  &-toggle {
+    border: none;
+    margin: 0 1rem;
+  }
+}

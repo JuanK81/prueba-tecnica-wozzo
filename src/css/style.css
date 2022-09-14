@@ -1,0 +1,209 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap");
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  transition: all 0.2s; }
+
+body {
+  width: 100%; }
+
+header {
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+  font-size: 2rem; }
+  header h1 {
+    color: #349980; }
+
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.checkbox_cont-input {
+  border: 0.19rem solid #cacaca;
+  width: 63rem;
+  border: none;
+  margin-top: 0.5rem;
+  padding: 0.5rem; }
+  .checkbox_cont-input-logo {
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    width: 1.9rem; }
+  .checkbox_cont-input-wrapper {
+    position: relative; }
+
+.checkbox_cont-items {
+  margin-top: 1rem; }
+
+.checkbox_cont-item {
+  padding: 0.3rem 0.5rem; }
+
+.checkbox_cont-checkbox:checked {
+  accent-color: #6800f0; }
+
+.checkbox_cont-label {
+  font-size: 1.1rem;
+  margin-left: 1.6rem; }
+
+.checkbox_cont {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  padding-left: 1rem; }
+  .checkbox_cont-input {
+    width: 62.5rem;
+    margin-left: 0.2rem;
+    border-top: 0.19rem solid #cacaca;
+    border-bottom: 0.19rem solid #cacaca; }
+  .checkbox_cont-text {
+    color: #535353;
+    font-size: 1.2rem;
+    margin: 0 0.5rem; }
+  .checkbox_cont-icon {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    border-radius: 0.2rem;
+    border: 0.19rem solid #535353;
+    height: 1.3rem;
+    width: 1.3rem; }
+    .checkbox_cont-icon-image {
+      width: 1rem; }
+
+.checked {
+  background-color: #6800f0; }
+
+.dropdown {
+  width: 63rem;
+  display: flex;
+  grid-column: 1 / 2;
+  margin-top: -3.6rem; }
+  .dropdown-container {
+    display: flex;
+    flex-direction: column;
+    margin-left: -0.6rem; }
+
+.pill {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  height: 2.8rem;
+  background-color: #cacaca;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  margin-left: 0.5rem;
+  padding: 0.5rem 1rem; }
+  .pill p {
+    color: #535353;
+    font-size: 1.1rem; }
+  .pill-item {
+    margin-right: 1.2rem; }
+
+.select {
+  width: 63rem;
+  display: grid;
+  grid-template-columns: 1fr 3rem;
+  grid-template-rows: 1fr;
+  position: relative; }
+  .select-options {
+    border: 0.19rem solid #cacaca;
+    width: 63rem;
+    border-radius: 0.6rem;
+    display: flex;
+    flex-direction: column;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    justify-content: center;
+    min-height: 4.4rem;
+    padding-bottom: 0.5rem;
+    padding: 0 0.5rem; }
+  .select-option {
+    align-items: center;
+    color: #535353;
+    cursor: pointer;
+    display: flex;
+    font-size: 1.5rem;
+    min-height: 4rem; }
+  .select-btn {
+    background: transparent;
+    border: none;
+    color: #535353;
+    font-size: 2rem;
+    height: 2rem;
+    position: absolute;
+    right: 0.7rem;
+    top: 1rem;
+    width: 2rem; }
+    .select-btn-icon {
+      width: 1.9rem; }
+
+.selected_opt {
+  width: 63rem;
+  display: grid;
+  grid-template-columns: 1fr 2rem 10rem; }
+  .selected_opt-items {
+    display: flex;
+    grid-row: 1 / 2; }
+  .selected_opt-item {
+    display: flex;
+    grid-column: 1 / 2; }
+  .selected_opt-dots {
+    font-size: 2rem;
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    margin-top: 0.6rem; }
+  .selected_opt-controls {
+    align-items: center;
+    display: flex;
+    grid-column: 3 / 4;
+    grid-row: 1 / 2;
+    justify-content: center;
+    margin-right: 1.3rem; }
+  .selected_opt-total {
+    align-items: center;
+    background-color: #535353;
+    border-radius: 0.4rem;
+    display: flex;
+    height: 2.4rem;
+    width: 2.4rem;
+    justify-content: center;
+    margin: 0 0.5rem 0.5rem 0; }
+  .selected_opt-number {
+    color: #fff;
+    font-size: 1.8rem; }
+  .selected_opt-close {
+    background: none;
+    border: none;
+    color: #535353;
+    margin-bottom: -0.2rem; }
+    .selected_opt-close-icon {
+      margin-left: -0.3rem;
+      margin-bottom: 0.4rem;
+      width: 2.4rem; }
+  .selected_opt-toggle {
+    border: none;
+    margin: 0 1rem; }
+
+.test {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  margin-top: 10rem;
+  width: 100%; }
+  .test-container {
+    width: 63rem;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; }

@@ -1,0 +1,12 @@
+.dropdown {
+  @include std-width;
+  display: flex;
+  grid-column: 1 / 2;
+  margin-top: -3.6rem;
+
+  &-container {
+    display: flex;
+    flex-direction: column;
+    margin-left: -0.6rem;
+  }
+}

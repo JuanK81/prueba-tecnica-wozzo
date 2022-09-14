@@ -1,0 +1,18 @@
+.pill {
+  @include display-center;
+  height: 2.8rem;
+  background-color: $color-grey-light;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  margin-left: 0.5rem;
+  padding: 0.5rem 1rem;
+
+  p {
+    color: $color-grey-dark;
+    font-size: 1.1rem;
+  }
+
+  &-item {
+    margin-right: 1.2rem;
+  }
+}
